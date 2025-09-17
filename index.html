@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YardChatz - Community Social App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            margin: 20px 0 10px 0;
+            font-size: 1.3rem;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .safety-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .feature-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 YardChatz</h1>
+            <p>Connect with your community through shared experiences</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>About YardChatz</h2>
+                <p>YardChatz is a community-focused social app that brings neighbors together through shared experiences, local events, and meaningful connections. Our platform prioritizes user safety, privacy, and positive community building.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Safety & Privacy Information</h2>
+                <p>YardChatz is committed to providing a safe, respectful environment for all users. We have implemented comprehensive safety measures to protect our community:</p>
+                
+                <div class="safety-features">
+                    <div class="feature-card">
+                        <h4>🛡️ User Blocking System</h4>
+                        <p>Users can block other users at any time. Blocked users cannot see your content or interact with you in any way.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>📍 Location Privacy</h4>
+                        <p>Location sharing is completely optional and manual. Users must check in each time they want to share their location - no automatic tracking.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>🚨 Content Moderation</h4>
+                        <p>Advanced content filtering system with AI-powered detection and user reporting capabilities. Reported content is reviewed within 24 hours.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>👥 User Reporting</h4>
+                        <p>Easy-to-use reporting system for inappropriate content or behavior. All reports are reviewed by our moderation team.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>🔒 Privacy Controls</h4>
+                        <p>Comprehensive privacy settings allow users to control who can see their content and how their data is used.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>📱 Age Verification</h4>
+                        <p>App is rated 18+ with proper age verification during onboarding to ensure appropriate content for all users.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Legal Documents</h2>
+                <p>All legal documents are available within the YardChatz app:</p>
+                <ul>
+                    <li><strong>Terms of Service</strong> - Accessible via in-app view</li>
+                    <li><strong>Privacy Policy</strong> - Accessible via in-app view</li>
+                    <li><strong>Community Guidelines</strong> - Available in app settings</li>
+                </ul>
+                <p>These documents are always up-to-date and easily accessible to all users within the app interface.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Contact & Support</h2>
+                <div class="contact-info">
+                    <p><strong>📧 Email Support:</strong> <a href="mailto:rappleyard@yardchatz.com">rappleyard@yardchatz.com</a></p>
+                    <p><strong>📞 Phone Support:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <p><strong>🌐 Website:</strong> <a href="https://www.yardchatz.com">www.yardchatz.com</a></p>
+                    <p><strong>⏰ Response Time:</strong> Within 24 hours for email, business hours for phone</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>App Store Compliance</h2>
+                <p>YardChatz fully complies with all App Store guidelines including:</p>
+                <ul>
+                    <li>✅ 18+ age rating with proper verification</li>
+                    <li>✅ Comprehensive user blocking system</li>
+                    <li>✅ Manual location sharing (no automatic tracking)</li>
+                    <li>✅ 24-hour content moderation response</li>
+                    <li>✅ In-app developer contact information</li>
+                    <li>✅ Functional Terms of Service and Privacy Policy links</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 YardChatz. All rights reserved.</p>
+            <p>Building stronger communities, one connection at a time.</p>
+        </div>
+    </div>
+</body>
+</html>
